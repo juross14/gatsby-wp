@@ -34,7 +34,7 @@ export const FeatureStep = styled.div`
 
 export const FeatureDesc = styled.div`
     max-width: 36ch;
-    text-align: left;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
 `;

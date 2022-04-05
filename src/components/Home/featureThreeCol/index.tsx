@@ -2,8 +2,8 @@ import React from 'react';
 import SVG from 'react-inlinesvg';
 import { StaticQuery, graphql } from "gatsby"
 import Icon1 from '../../../assets/undraw_designer.svg';
-import Icon2 from '../../../assets/undraw_creation.svg';
-import Icon3 from '../../../assets/undraw_responsive.svg';
+import Icon2 from '../../../assets/undraw_everywhere.svg';
+import Icon3 from '../../../assets/undraw_hello_aeia.svg';
 
 import { FeatureThreeColSection, GenericContainer, FeatureInner, FeatureStep, FeatureMedia, FeatureDesc } from './Styles';
 
@@ -46,21 +46,21 @@ export const FeatureThreeCol: React.FC = () => {
 					<FeatureInner>
 						<FeatureStep>
 							<FeatureMedia>
-								<SVG src={Icon1} cacheRequests={true} width={100} height="100%" />
+								<SVG src={Icon1} cacheRequests={true} width={150} height="100%" />
 							</FeatureMedia>
 							<h4>{data.wpPage.fieldsHomepage.threecolums? data.wpPage.fieldsHomepage.threecolums.featureone.headings:'Heading is Empty' }</h4>
 							<FeatureDesc>{data.wpPage.fieldsHomepage.threecolums? data.wpPage.fieldsHomepage.threecolums.featureone.description:'Description is Empty' }</FeatureDesc>
 						</FeatureStep>
 						<FeatureStep>
 							<FeatureMedia>
-								<SVG src={Icon2} cacheRequests={true} width={100} height="100%" />
+								<SVG src={Icon2} cacheRequests={true} width={150} height="100%" />
 							</FeatureMedia>
 							<h4>{data.wpPage.fieldsHomepage.threecolums? data.wpPage.fieldsHomepage.threecolums.featuretwo.headings:'Heading is Empty' }</h4>
 							<FeatureDesc>{data.wpPage.fieldsHomepage.threecolums? data.wpPage.fieldsHomepage.threecolums.featuretwo.description:'Description is Empty' }</FeatureDesc>
 						</FeatureStep>
 						<FeatureStep>
 							<FeatureMedia>
-								<SVG src={Icon3} cacheRequests={true} width={100} height="100%" />
+								<SVG src={Icon3} cacheRequests={true} width={150} height="100%" />
 							</FeatureMedia>
 							<h4>{data.wpPage.fieldsHomepage.threecolums? data.wpPage.fieldsHomepage.threecolums.featurethree.headings:'Heading is Empty' }</h4>
 							<FeatureDesc>{data.wpPage.fieldsHomepage.threecolums? data.wpPage.fieldsHomepage.threecolums.featurethree.description:'Description is Empty' }</FeatureDesc>

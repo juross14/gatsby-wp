@@ -2,6 +2,8 @@ import * as React from 'react'
 import styled from '@emotion/styled'
 import { transparentize } from 'polished'
 import { Link } from 'gatsby'
+import SVG from 'react-inlinesvg';
+import logo from '../assets/looking4svg.svg';
 
 import { heights, dimensions, colors } from '../styles/variables'
 import Container from './Container'
@@ -65,10 +67,10 @@ interface HeaderProps {
   title: string
 }
 
-const Header: React.FC<HeaderProps> = ({ title }) => (
+const Header: React.FC<HeaderProps> = () => (
   <StyledHeader>
     <HeaderInner>
-      <HomepageLink to="/">{title}</HomepageLink>
+      <HomepageLink to="/"><SVG src={logo} cacheRequests={true} width={145} height="100%" /></HomepageLink>
         <MenuContainer>
           <ParentMenu>
             <ChildList><LinkTo href="/">Home</LinkTo></ChildList>

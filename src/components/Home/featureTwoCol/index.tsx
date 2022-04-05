@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import SVG from 'react-inlinesvg';
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby";
+import Icon1 from '../../../assets/undraw_tabs.svg';
+import Icon2 from '../../../assets/together.svg';
 
 import { ExpandedFeatureSection, ExpandedFeatureSectionWhite, GenericContainer, ExpandedInner, ExpandedInnerReverse, ExpandedMedia, ExpandedContent, ExpandedText } from './Styles';
 
@@ -47,9 +49,8 @@ export const FeatureTwoCol: React.FC = () => {
 
     const sectionOne = data.wpPage.fieldsHomepage.twocolumns.sectionone;
     const sectionTwo = data.wpPage.fieldsHomepage.twocolumns.sectiontwo;
-    const sectionThree = data.wpPage.fieldsHomepage.twocolumns.sectionthree;
 
-    const alldata = [sectionOne, sectionTwo, sectionThree];
+    const alldata = [sectionOne, sectionTwo];
 
     return (
         <Fragment>
@@ -60,7 +61,7 @@ export const FeatureTwoCol: React.FC = () => {
                             <GenericContainer>
                                 <ExpandedInnerReverse>
                                     <ExpandedMedia>
-                                        <SVG src={item.featimage.mediaItemUrl} cacheRequests={true} width={280} height="100%" />
+                                        <SVG src={Icon1} cacheRequests={true} width={280} height="100%" />
                                     </ExpandedMedia>
                                     <ExpandedContent>
                                         <h3 > {item ? item.title : "Title Empty"}</h3>
@@ -74,7 +75,7 @@ export const FeatureTwoCol: React.FC = () => {
                             <GenericContainer>
                                 <ExpandedInner>
                                     <ExpandedMedia>
-                                        <SVG src={item.featimage.mediaItemUrl} cacheRequests={true} width={280} height="100%" />
+                                        <SVG src={Icon2} cacheRequests={true} width={280} height="100%" />
                                     </ExpandedMedia>
                                     <ExpandedContent>
                                         <h3> {item ? item.title : "Title Empty"}</h3>

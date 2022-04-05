@@ -2,7 +2,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: '[//] AWSMDEV',
+    title: 'Looking4 | Home, Pesonal & Community Services',
     description: 'A starter kit for TypeScript-based Gatsby projects with sensible defaults.',
     keywords: 'gatsbyjs, gatsby, javascript, sample, something',
     siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
@@ -15,6 +15,12 @@ module.exports = {
   proxy: {
     prefix: "/wpupload",
     url: "http://localhost/onewp/",
+  },
+  flags: {
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    DEV_WEBPACK_CACHE: true,
+    FAST_DEV: true,
+    FAST_REFRESH: true,
   },
   plugins: [
     {

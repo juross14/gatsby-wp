@@ -25,8 +25,6 @@ const PageTemplate = ({ data }: { data: any }) => {
         <Container>
           <h1 dangerouslySetInnerHTML={{ __html: page.title }} />
           <div dangerouslySetInnerHTML={{ __html: page.content }} />
-          <p>{ page.fieldsHomepage.headingshome }</p>
-          <p>{ page.fieldsHomepage.descriptionhome }</p>
         </Container>
       </Page>
     </IndexLayout>

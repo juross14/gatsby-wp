@@ -6,9 +6,9 @@ export const CallToAction: React.FC = () => {
     return (
             <CalltoActionSection>
                 <GenericContainer>                
-                    <CtaHeader>Reach us For More Information</CtaHeader>
-                    <CtaDescription>Grab the production version and begin your project instantly.</CtaDescription>
-                    <ButtonCta href={"https://github.com/styled-components/styled-components"} > Get Started </ButtonCta>
+                    <CtaHeader>Reach us for more Details</CtaHeader>
+                    <CtaDescription>Connecting people and creating a livehood to the community.</CtaDescription>
+                    <ButtonCta href={"#top"} > Get Started </ButtonCta>
                 </GenericContainer>
             </CalltoActionSection>
     );

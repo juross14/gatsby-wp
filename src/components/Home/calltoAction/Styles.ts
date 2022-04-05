@@ -3,8 +3,8 @@ import styled from '../../../styles/globalstyle';
 
 
 export const CalltoActionSection = styled.section`
-    background: -webkit-gradient(linear,right top,left top,from(#6c63ff),to(#4641ff));
-    background: linear-gradient(270deg,#6c63ff,#4641ff);
+    background: -webkit-gradient(linear,right top,left top,from(#6159e6),to(#329373));
+    background: linear-gradient(270deg,#6159e6,#329373);
     padding: 50pt 0;
     margin-bottom: -50px;
 `;

@@ -6,7 +6,7 @@ export const FooterModuleSection: React.FC = () => {
     return (
             <FooterSection>
                 <GenericContainer>                
-                    <p >© MADRID DEV 2022 | A COFFEE LOVER AND WEB/WORDPRESS DEVELOPER</p>
+                    <p>© MADRID TEAM DEV 2022 | FOR WEB SOLUTION CONTACT US</p>
                 </GenericContainer>
             </FooterSection>
     );
